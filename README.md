@@ -1,12 +1,12 @@
-# 📘 Word2Vec on IIT Jodhpur Corpus
+#  Word2Vec on IIT Jodhpur Corpus
 
-## 📌 Overview
+##  Overview
 
 This project focuses on learning word embeddings using the Word2Vec model on a domain-specific corpus created from IIT Jodhpur data. The workflow includes dataset preparation, preprocessing, manual implementation of Word2Vec (CBOW and Skip-gram), and evaluation using similarity, analogies, and visualization techniques.
 
 ---
 
-## 🎯 Objectives
+## Objectives
 
 * Build a clean textual corpus from IIT Jodhpur sources
 * Perform preprocessing and corpus optimization
@@ -16,7 +16,7 @@ This project focuses on learning word embeddings using the Word2Vec model on a d
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 ├── NLU_Prob1.ipynb        # Dataset preparation and preprocessing
@@ -33,7 +33,7 @@ This project focuses on learning word embeddings using the Word2Vec model on a d
 
 ---
 
-## 🧾 Dataset Preparation
+##  Dataset Preparation
 
 * Data collected from IIT Jodhpur websites and academic PDFs
 * HTML and PDF text extraction performed
@@ -41,7 +41,7 @@ This project focuses on learning word embeddings using the Word2Vec model on a d
 
 ---
 
-## ⚙️ Preprocessing Steps
+##  Preprocessing Steps
 
 1. Removal of boilerplate content (headers, footers, scripts)
 2. Cleaning (removal of special characters, lowercasing)
@@ -53,21 +53,21 @@ This project focuses on learning word embeddings using the Word2Vec model on a d
 
 ---
 
-## 🤖 Model Training
+##  Model Training
 
 Two Word2Vec models were implemented manually using NumPy:
 
-### 🔹 CBOW
+###  CBOW
 
 * Predicts target word from context
 * Faster but less expressive
 
-### 🔹 Skip-gram
+###  Skip-gram
 
 * Predicts context from target word
 * Better for semantic relationships
 
-### ⚙️ Hyperparameters
+###  Hyperparameters
 
 * Embedding dimensions: 50, 100, 200, 300
 * Window size: 3, 5
@@ -76,16 +76,16 @@ Two Word2Vec models were implemented manually using NumPy:
 
 ---
 
-## 📊 Evaluation
+##  Evaluation
 
-### 🔹 Top Words (Frequency-based)
+###  Top Words (Frequency-based)
 
 Common words include:
 `program, student, course, research, academic, phd, masters`
 
 ---
 
-### 🔹 Example Embedding
+###  Example Embedding
 
 ```
 student - 0.1284, -0.0921, 0.4410, ..., 0.0037
@@ -93,7 +93,7 @@ student - 0.1284, -0.0921, 0.4410, ..., 0.0037
 
 ---
 
-### 🔹 Analogies
+###  Analogies
 
 * UG : BTech :: PG : Masters
 * Student : Exam :: Researcher : Publication
@@ -101,7 +101,7 @@ student - 0.1284, -0.0921, 0.4410, ..., 0.0037
 
 ---
 
-## 📈 Visualization
+##  Visualization
 
 Word embeddings were visualized using:
 
@@ -112,7 +112,7 @@ Skip-gram showed better clustering compared to CBOW.
 
 ---
 
-## 🧠 Key Observations
+##  Key Observations
 
 * Skip-gram captures semantic relationships better
 * Larger embedding dimensions improve representation quality
@@ -121,7 +121,7 @@ Skip-gram showed better clustering compared to CBOW.
 
 ---
 
-## ⚠️ Limitations
+##  Limitations
 
 * Limited dataset size affects embedding quality
 * Manual implementation is slower than optimized libraries
@@ -129,7 +129,7 @@ Skip-gram showed better clustering compared to CBOW.
 
 ---
 
-## 🚀 How to Run
+##  How to Run
 
 1. Install dependencies:
 
@@ -144,13 +144,13 @@ pip install numpy nltk matplotlib scikit-learn
 
 ---
 
-## 📌 Conclusion
+##  Conclusion
 
 This project demonstrates how word embeddings can be learned from a domain-specific corpus and used to capture semantic relationships. Despite limitations, the models successfully encode meaningful academic relationships.
 
 ---
 
-## 👤 Author
+##  Author
 
 Akash Kashyap
 M25CSE003
